@@ -20,10 +20,10 @@ git clone git@github.com:roots/bedrock.git ./site && rm -Rf ./site/.git && rm -R
 cp -rf  ./configs/.env ./site/.env
 cp -rf ./configs/composer.json ./site/composer.json
 
-theme_dir="./site/web/app/themes/jointsWP"
+theme_dir="./site/web/app/themes/wp-boilerplate"
 
-# clone the theme "JointsWP"
-git clone git@github.com:JeremyEnglert/JointsWP.git $theme_dir && rm -Rf $theme_dir/.git
+# clone the theme "Boilerplate theme"
+git clone git@github.com:abarcenas29/wordpress-theme.git $theme_dir && rm -Rf $theme_dir/.git
 
 # Build the image
 docker-compose build --force-rm --no-cache
